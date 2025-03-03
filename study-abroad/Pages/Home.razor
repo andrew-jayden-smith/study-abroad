@@ -1,24 +1,114 @@
 ﻿@page "/"
 
-<PageTitle>Home</PageTitle>
+<PageTitle>Study Abroad Recruitment</PageTitle>
 
-<h1>Study Abroad!</h1>
-
-Welcome to your new app.
+@* Banner *@
+<img src="/sample-data/buffalo-banner.jpg" alt="Banner" class="banner-image">
 
 <div class="">
-    <div class="box-style" id="benefits" >
-        <h1>Benefits</h1>
+
+    @* Benefits Section *@
+    <section id="benefits" style="background-color: #f4f4f9; padding: 40px 20px; border-radius: 40px; max-width: 1000px; margin: 0 auto; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <h1 style="font-family: 'Arial', sans-serif; color: #402E3A; font-size: 2.5rem; margin-bottom: 20px; text-align: center;">Your Path to Success Starts Here!</h1>
+        <h4 style="font-family: 'Maku', sans-serif; color: #402E3A; font-size: 2rem; margin-bottom: 30px; text-align: center;">World-Class Education</h4>
+
+        <p style="font-size: 22px; line-height: 1.6; color: #34495e; text-align: left; max-width: 800px; margin: 0 auto;">
+            The United States is home to many of the world’s top universities, known for their cutting-edge research, experienced faculty, and high academic standards. A degree from a U.S. institution is highly recognized and respected worldwide.
+        </p>
+        <p style="font-size: 22px; line-height: 1.6; color: #34495e; text-align: left; max-width: 800px; margin: 20px auto 0;">
+            Studying in the U.S. opens doors to valuable career opportunities. Many universities offer internships and co-op programs allowing students to gain real-world experience while studying.
+        </p>
+    </section>
+
+    
+
+    @*Opportunites Section*@
+    <div style="display: flex; justify-content: center; gap: 5px; flex-wrap: wrap; margin: 10px">
+        <section id="opportunities" style="background-color: #f4f4f9; padding: 25px 5px; border-radius: 40px; width: 430px; margin: 10px 10px 10px 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <h1 style="font-family: 'Maku', sans-serif; color: #402E3A; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">Academic Excellence</h1>
+
+            <img src="/sample-data/School.jpg" alt="School" width="380px" height="300px" style="display: block; margin: 0 auto;">
+
+            <button onclick="toggleMoreInfo1()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 18px; color: white; background-color: #402E3A; border: none; border-radius: 5px; cursor: pointer;">
+                Read More
+            </button>
+
+            <div id="more-info1" style="display: none;">
+                <p style="font-size: 22px; line-height: 1.6; color: #34495e; text-align: left; max-width: 800px; margin: 20px auto 0;">
+                    The U.S. is home to top-ranked universities offering world-class education across diverse fields. Find the perfect program to achieve your goals!
+                </p>
+            </div>
+        </section>
+
+
+        <section style="background-color: #f4f4f9; padding: 25px 5px; border-radius: 40px; width: 430px; margin: 10px 10px 10px 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <h1 style="font-family: 'Maku', sans-serif; color: #402E3A; font-size: 2.5rem; margin-bottom: 20px; text-align: center;">Career Opportunities</h1>
+
+            <img src="/sample-data/Career.jpg" alt="School" width="380px" height="300px" style="display: block; margin: 0 auto;">
+
+            <button onclick="toggleMoreInfo2()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 18px; color: white; background-color: #402E3A; border: none; border-radius: 5px; cursor: pointer;">
+                Read More
+            </button>
+
+            <div id="more-info2" style="display: none;">
+                <p style="font-size: 22px; line-height: 1.6; color: #34495e; text-align: left; max-width: 800px; margin: 20px auto 0;">
+                    Gain valuable work experience through internships, research programs, and Optional Practical Training (OPT) to kick-start your career in the U.S.
+                </p>
+            </div>
+        </section>
+
+        <section style="background-color: #f4f4f9; padding: 25px 5px; border-radius: 40px; width: 430px; margin: 10px 10px 10px 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <h1 style="font-family: 'Maku', sans-serif; color: #402E3A; font-size: 2.5rem; margin-bottom: 20px; text-align: center;">Campus Life</h1>
+
+            <img src="/sample-data/CampusLife.jpg" alt="School" width="380px" height="300px" style="display: block; margin: 0 auto;">
+
+            <button onclick="toggleMoreInfo3()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 18px; color: white; background-color: #402E3A; border: none; border-radius: 5px; cursor: pointer;">
+                Read More
+            </button>
+
+            <div id="more-info3" style="display: none;">
+                <p style="font-size: 22px; line-height: 1.6; color: #34495e; text-align: left; max-width: 800px; margin: 20px auto 0;">
+                    Meet students from all over the world, experience diverse cultures, and enjoy an exciting campus life with clubs, sports, and student events!
+                </p>
+            </div>
+        </section>
     </div>
-    <div class="box-style" id="about-usa" >
-        <h1>About USA</h1>
-        <img src="/sample-data/USA.jpeg" alt="USA" width="259px" height="194px">
-    </div>
-    <div class="box-style" id="studies" >
-        <h1>Studies and Opportunities</h1>
-    </div>
-    <div class="box-style" id="colleges" >
+
+    @*Study and Opportunites div*@
+    <div class="box-style" id="colleges">
         <h1>Colleges</h1>
     </div>
+
+    @*Study Section*@
+    <div class="box-style" id="studies">
+        <h1>Studies/Programs</h1>
+    </div>
+
+    @* Example Images Side by side *@
+    <div class="box-style" id="studies">
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <img src="/sample-data/buffalo-banner.jpg" alt="Banner" class="banner-image" height="150px" style="width: 30%;">
+            <img src="/sample-data/CampusLife.jpg" alt="Campus Life" class="banner-image" height="150px" style="width: 30%;">
+            <img src="/sample-data/Career.jpg" alt="Career" class="banner-image" height="150px" style="width: 30%;">
+        </div>
+    </div>
+
+    
     <a href="">Top Page</a>
 </div>
+
+@* JavaScript for Opportunities *@
+<script>
+    function toggleMoreInfo1() {
+        const moreInfo = document.getElementById("more-info1");
+        moreInfo.style.display = moreInfo.style.display === "none" ? "block" : "none";
+    }
+    function toggleMoreInfo2() {
+        const moreInfo = document.getElementById("more-info2");
+        moreInfo.style.display = moreInfo.style.display === "none" ? "block" : "none";
+    }
+    function toggleMoreInfo3() {
+        const moreInfo = document.getElementById("more-info3");
+        moreInfo.style.display = moreInfo.style.display === "none" ? "block" : "none";
+    }
+</script>

@@ -1,44 +1,89 @@
 ﻿@page "/contact-us"
 @inject IJSRuntime JS
-@using System.IO
-@using GemBox.Email
+@using System.Net
+@using System.Net.Mail
+@using System.ComponentModel.DataAnnotations
 
 <PageTitle>Contact Us</PageTitle>
 
-<h1>Contact Us</h1>
+<EditForm Model="Model" OnValidSubmit="CreateEmail">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+    <div class="container" style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <div class="form-container" style="width: 400px; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+            
+            <div class="form-group" style="padding-left: 10px; width: 350px; padding-top: 75px">
+                First Name: <InputText @bind-Value="Model.FirstName" class="form-control" />
+                <ValidationMessage For="@(() => Model.FirstName)" />
+            </div>
 
-<EditForm Model="Model" OnSubmit="CreateEmail">
-    <div class="form-group">Email: <InputText @bind-Value="Model.Sender" class="form-control"></InputText></div>
-    <div class="form-group">Name: <InputText @bind-Value="Model.FirstName" class="form-control"></InputText></div>
-    <div class="form-group">Message: <InputTextArea @bind-Value="Model.Message" class="form-control" rows="8"></InputTextArea></div>
-    <div class="form-group"><button class="btn btn-primary mt-2" type="submit">Submit</button></div>
+            <div class="form-group" style="padding-left: 10px; width: 350px">
+                Last Name: <InputText @bind-Value="Model.LastName" class="form-control" />
+                <ValidationMessage For="@(() => Model.LastName)" />
+            </div>
+
+            <div class="form-group" style="padding-left: 10px; width: 350px">
+                Email: <InputText @bind-Value="Model.Email" class="form-control" />
+                <ValidationMessage For="@(() => Model.Email)" />
+            </div>
+
+            <div class="form-group" style="padding-left: 10px; width: 350px">
+                Message: <InputTextArea @bind-Value="Model.Message" class="form-control" rows="8" />
+                <ValidationMessage For="@(() => Model.Message)" />
+            </div>
+
+            <div class="form-group" style="padding-left: 10px">
+                <button class="btn btn-primary mt-2" type="submit">Submit</button>
+            </div>
+        </div>
+    </div>
 </EditForm>
 
 @code {
     private EmailForm Model { get; set; } = new EmailForm();
-    
+
     private class EmailForm
     {
-        public string Sender { get; set; } = string.Empty;
-            public string FirstName { get; set; } = string.Empty;
-            public string LastName { get; set; } = string.Empty;
-            public string Message { get; set; } = string.Empty;
+        [Required, EmailAddress]
+        public string Email { get; set; } = string.Empty;
+
+        [Required]
+        public string FirstName { get; set; } = string.Empty;
+
+        [Required] 
+        public string LastName { get; set; } = string.Empty;
+
+        [Required]
+        public string Message { get; set; } = string.Empty;
     }
+
     private async Task CreateEmail()
     {
-        ComponentInfo.SetLicense("FREE-LIMITED-KEY");
+        try
+        {
+            var smtpClient = new SmtpClient("smtp.gmail.com")
+            {
+                Port = 587, // Use 587 for TLS
+                Credentials = new NetworkCredential("@gmail.com", "..."),
+                EnableSsl = true, // Enable SSL
+            };
 
-        // Create email.
-        MailMessage message = new MailMessage("smith2842@marshall.edu");
-        message.Subject = "User is interested in recruitment";
+            var message = new MailMessage
+            {
+                From = new MailAddress(Model.Email),
+                Subject = "User is interested in recruitment",
+                Body = $"Name: {Model.FirstName} {Model.LastName}\n\nMessage:\n{Model.Message}",
+                IsBodyHtml = false,
+            };
 
-        // Save EML file.
-        var stream = new MemoryStream();
-        message.Save(stream, MailMessageFormat.Eml);
-        stream.Position = 0;
+            message.To.Add("smithdrew867@gmail.com"); // Replace with your email recipient
 
-        // Download file.
-        using var streamRef = new DotNetStreamReference(stream);
-        await JS.InvokeVoidAsync("downloadFileFromStream", "BlazorWebAssemblyOutput.eml", streamRef);
+            await smtpClient.SendMailAsync(message);
+            Console.WriteLine("Email Sent Successfully!");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error sending email: {ex.Message}");
+        }
     }
 }
