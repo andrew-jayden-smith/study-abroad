@@ -1,89 +1,76 @@
 ﻿@page "/contact-us"
-@inject IJSRuntime JS
-@using System.Net
-@using System.Net.Mail
-@using System.ComponentModel.DataAnnotations
+@using PostmarkDotNet
+@inject HttpClient Client
+@inject ContactUsService contactUsService
 
 <PageTitle>Contact Us</PageTitle>
 
-<EditForm Model="Model" OnValidSubmit="CreateEmail">
-    <DataAnnotationsValidator />
-    <ValidationSummary />
-    <div class="container" style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
-        <div class="form-container" style="width: 400px; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            
-            <div class="form-group" style="padding-left: 10px; width: 350px; padding-top: 75px">
-                First Name: <InputText @bind-Value="Model.FirstName" class="form-control" />
-                <ValidationMessage For="@(() => Model.FirstName)" />
-            </div>
+<div class="container" style="min-height: 100vh; display: flex; justify-content: center; align-items: center; width: 100vw;">
 
-            <div class="form-group" style="padding-left: 10px; width: 350px">
-                Last Name: <InputText @bind-Value="Model.LastName" class="form-control" />
-                <ValidationMessage For="@(() => Model.LastName)" />
-            </div>
+    <div class="form-container" style="width: 500px; padding: 20px; background-color: #f9f9f9; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center;">Contact Us</h2>
 
-            <div class="form-group" style="padding-left: 10px; width: 350px">
-                Email: <InputText @bind-Value="Model.Email" class="form-control" />
-                <ValidationMessage For="@(() => Model.Email)" />
-            </div>
+        <div class="form-group" style="padding-left: 10px; width: 450px; padding-top: 30px;">
+            First Name: <input type="text" id="firstName" @bind="firstName" class="form-control"/>
+        </div>
 
-            <div class="form-group" style="padding-left: 10px; width: 350px">
-                Message: <InputTextArea @bind-Value="Model.Message" class="form-control" rows="8" />
-                <ValidationMessage For="@(() => Model.Message)" />
-            </div>
+        <div class="form-group" style="padding-left: 10px; width: 450px;">
+            Last Name: <input type="text" id="lastName" @bind="lastName" class="form-control"/>
+        </div>
 
-            <div class="form-group" style="padding-left: 10px">
-                <button class="btn btn-primary mt-2" type="submit">Submit</button>
-            </div>
+        <div class="form-group" style="padding-left: 10px; width: 450px;">
+            Email: <input type="text" id="email" @bind="email" class="form-control"/>
+        </div>
+
+        <div class="form-group" style="padding-left: 10px; width: 450px;">
+            Message: <input type="text" id="message" @bind="message" class="form-control"/>
+        </div>
+
+        <div class="form-group" style="padding-left: 190px;">
+            <button class="btn btn-primary mt-2" @onclick="SendEmail">Submit</button>
         </div>
     </div>
-</EditForm>
+</div>
+
+
 
 @code {
-    private EmailForm Model { get; set; } = new EmailForm();
+    private string firstName;
+    private string lastName;
+    private string email;
+    private string message;
+    
+    private string buttonColor = "primary"; // Default color (Blue)
 
-    private class EmailForm
+    
+    private async Task SendEmail()
     {
-        [Required, EmailAddress]
-        public string Email { get; set; } = string.Empty;
+        string htmlContent = $"<h1>You have a new recruit by the name of {firstName} {lastName} who wants to connect</h1>" +
+                             $"<p>Email: {email}</p>" +
+                             $"<p>Message: {message}</p>";
+        
+        
+        bool success = await contactUsService.SendEmailAsync(
+            "smith2842@marshall.edu",
+            "smith2842@marshall.edu",
+            "New Recruitment",
+            "This is plain body",
+            htmlContent
+        );
 
-        [Required]
-        public string FirstName { get; set; } = string.Empty;
-
-        [Required] 
-        public string LastName { get; set; } = string.Empty;
-
-        [Required]
-        public string Message { get; set; } = string.Empty;
-    }
-
-    private async Task CreateEmail()
-    {
-        try
+        if (success)
         {
-            var smtpClient = new SmtpClient("smtp.gmail.com")
-            {
-                Port = 587, // Use 587 for TLS
-                Credentials = new NetworkCredential("@gmail.com", "..."),
-                EnableSsl = true, // Enable SSL
-            };
+            Console.WriteLine("Email Sent");
 
-            var message = new MailMessage
-            {
-                From = new MailAddress(Model.Email),
-                Subject = "User is interested in recruitment",
-                Body = $"Name: {Model.FirstName} {Model.LastName}\n\nMessage:\n{Model.Message}",
-                IsBodyHtml = false,
-            };
-
-            message.To.Add("smithdrew867@gmail.com"); // Replace with your email recipient
-
-            await smtpClient.SendMailAsync(message);
-            Console.WriteLine("Email Sent Successfully!");
+            // Reset the fields
+            firstName = string.Empty;
+            lastName = string.Empty;
+            email = string.Empty;
+            message = string.Empty;
         }
-        catch (Exception ex)
+        else
         {
-            Console.WriteLine($"Error sending email: {ex.Message}");
+            Console.WriteLine("FAILED");
         }
     }
 }

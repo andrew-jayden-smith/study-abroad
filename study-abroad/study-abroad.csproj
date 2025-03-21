@@ -10,6 +10,7 @@
         <PackageReference Include="GemBox.Email" Version="2025.2.103" />
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="8.0.13"/>
         <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.13" PrivateAssets="all"/>
+        <PackageReference Include="Postmark" Version="5.2.0" />
     </ItemGroup>
 
 </Project>
