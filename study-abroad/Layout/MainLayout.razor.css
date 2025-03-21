@@ -15,15 +15,16 @@
 .nav-links {
     display: flex;
     gap: 2rem; /*Space Between Items on Navbar*/
+    font-size: 20px; /* Nav Bar Links txt size */
 }
 
 .nav-links a {
-    color: #000000; /* Set text color to black */
+    color: #102F48; /* Set text color to black */
     text-decoration: none; /* Remove underline */
 }
 
 .nav-links a:hover {
-    color: #444444;
+    color: #e30c14;
 }
 
 .top-row { /*Nav Bar*/
@@ -34,7 +35,7 @@
     background-color: white;
     z-index: 1000;
     padding-right: 10px;
-    height: 60px;
+    height: 70px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;  /* Ensures proper alignment */
     justify-content: space-between;  /* Spread elements evenly */
