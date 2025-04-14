@@ -1,102 +1,110 @@
-.box-style {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    border: 5px solid #102F48;
-    border-radius: 50px;
+/*
+CSS formatting for home.razor
+ */
+
+/*
+Following is used to format the overall page
+ */
+.home-page{
+    background-color: lightblue;
 }
 
+/*
+Following is used to format banner image at top of home page
+ */
 .banner-image {
-    width: 100%; 
-    height: 600px; 
-    display: block; 
+    width: 100%;
+    height: 465px;
+    display: block;
     margin: 0;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    padding-top:20px;
 }
 
-.section1 {
-    text-align: left;
-    margin-top: 50px;
-}
-
-.padding {
-    margin-top: 200px;
-    margin-bottom: 200px;
-}
-
-.inner {
-    width: 90%;
-    max-width: 1110px;
-    margin: 0 auto;
-}
-
-.intro {
-    margin: 0 0 0 95px;
-}
-
-.centerCol {
-    width: 100%;
-}
-
-.text-container {
-        width: 90%; 
-        max-width: 100%;
-        text-align: left;
-        margin: 0 auto;
-}
-
-html, body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.card {
-    width: 430px;
-    height: 500px;
-    perspective: 1000px; /* Creates 3D depth */
-    margin: 20px;
-    cursor: pointer;
-}
-
-.card-inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-}
-
-.card-front, .card-back {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    backface-visibility: hidden;
-    background: #f4f4f9;
-    border-radius: 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*
+Following is used to format flex container for intro section
+ */
+.intro-cont{
+    padding-top: 50px;
+    display:flex;
     justify-content: center;
-    padding: 20px;
-    text-align: center;
 }
 
-.card-front img {
-    width: 380px;
-    height: 350px;
+/*
+Following is used to format the small box in the intro section
+ */
+.intro{
+    background-color: #f4f4f9;
+    padding: 40px 20px;
+    border-radius: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card-back {
-    transform: rotateY(180deg);
+/*
+Following is used to format opportunities section
+ */
+.opportunities{
+    background-color: lightblue;
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.card.flipped .card-inner {
-    transform: rotateY(180deg);
+/*
+Following is used to format banner between Opportunities and colleges sections
+ */
+.sep-banner{
+    background-color: lightgray;
+    border-top:solid 5px black;
+    border-bottom: solid 5px black;
+    height: 100px;
+    width:100%;
+    display: flex;
+    justify-content: center;
 }
+/*
+Following is used to format the content within the banner above
+ */
+.sep-ban-info{
+    font-size: 35px;
+    color: black;
+}
+
+
+/*
+Following is used to format the colleges section
+ */
+.colleges-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display:grid;
+    gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 10px;
+    background-color: lightblue;
+}
+
+/*
+Following formats individual grid items contained within the 'colleges' section
+ */
+.collegeBox {
+    background-color: #f4f4f9;
+    padding: 20px 5px;
+    border-radius: 40px;
+    width: 480px;
+    margin: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0, 0.1);
+}
+
+
+
+
+
+
+
+
 

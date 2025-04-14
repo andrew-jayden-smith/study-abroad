@@ -3,14 +3,13 @@
 <PageTitle>Study Abroad Recruitment</PageTitle>
 
 @* Banner *@
-<img src="/sample-data/study-in-USA.jpeg" alt="Banner" class="banner-image">
+<img src="/sample-data/Students.jpg" alt="Banner" class="banner-image">
 
-<div class="">
+<div class="home-page">
     
-    <div id="benefits" style="padding-top: 50px"></div>
-    
-    @* Benefits Section *@
-    <section id="" style="background-color: #f4f4f9; padding: 40px 20px; border-radius: 40px; max-width: 1000px; margin: 0 auto; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+    @*Introduction Section*@
+    <div id="introduction" class="intro-cont">
+     <section class="intro">
         <h1 style="font-family: 'Arial', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 20px; text-align: center;">Your Path to Success Starts Here!</h1>
         <h4 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2rem; margin-bottom: 30px; text-align: center;">World-Class Education</h4>
 
@@ -21,11 +20,10 @@
             Studying in the U.S. opens doors to valuable career opportunities. Many universities offer internships and co-op programs allowing students to gain real-world experience while studying.
         </p>
     </section>
-
+    </div>
     
-
     @*Opportunites Section*@
-    <div id="opportunities" style="display: flex; justify-content: center; gap: 5px; flex-wrap: wrap; margin: 10px; padding-top: 50px; padding-bottom: 50px">
+    <div id="opportunities" class="opportunities">
         <section style="background-color: #f4f4f9; padding: 25px 5px; border-radius: 40px; width: 430px; margin: 10px 10px 10px 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
             <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">Academic Excellence</h1>
 
@@ -41,8 +39,7 @@
                 </p>
             </div>
         </section>
-
-
+        
         <section style="background-color: #f4f4f9; padding: 25px 5px; border-radius: 40px; width: 430px; margin: 10px 10px 10px 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
             <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">Career Opportunities</h1>
 
@@ -75,10 +72,84 @@
             </div>
         </section>
     </div>
+    
+    @*Banner to separate sections *@
+    <div id="sep-banner" class="sep-banner">
+        <section class="sep-ban-info">
+            StudyAbroad works with top Institutions across the United States
+        </section>
+        <section class="sep-ban-logo">
+            *Insert Uni logo here*
+        </section>
+    </div>
+    
+    @*Colleges Section*@
+    <div class="colleges-section" id="colleges">
+        
+        @*
+        "collegeBox" is the container for the Colleges section, using a grid layout (CSS in home.razor.css)
+        Each of the following sections creates a box, in the grid, to be used with the name of the corresponding college,
+        including a picture and link to the University's website
+        *@
+        <section class="collegeBox">
+            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">Marshall University</h1>
 
-    @*Study and Opportunites div*@
-    <div class="box-style" id="colleges">
-        <h1>Colleges</h1>
+            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
+
+            <button onclick="link1()" style="display: block; margin: 10px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+                Visit Site
+            </button>
+        </section>
+
+        <section class="collegeBox">
+            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
+
+            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
+
+            <button onclick="link2()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+                Visit Site
+            </button>
+        </section>
+
+        <section class="collegeBox">
+            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
+
+            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
+
+            <button onclick="link3()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+                Visit Site
+            </button>
+        </section>
+
+        <section class="collegeBox">
+            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
+
+            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
+
+            <button onclick="link4()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+                Visit Site
+            </button>
+        </section>
+
+        <section class="collegeBox">
+            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
+
+            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
+
+            <button onclick="link5()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+                Visit Site
+            </button>
+        </section>
+
+        <section class="collegeBox">
+            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
+
+            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
+
+            <button onclick="link6()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+                Visit Site
+            </button>
+        </section>
     </div>
 
     @*Study Section*@
@@ -86,20 +157,12 @@
         <h1>Studies/Programs</h1>
     </div>
 
-    @* Example Images Side by side *@
-    <div class="box-style">
-        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
-            <img src="/sample-data/buffalo-banner.jpeg" alt="Banner" class="banner-image" height="150px" style="width: 30%;">
-            <img src="/sample-data/CampusLife.jpeg" alt="Campus Life" class="banner-image" height="150px" style="width: 30%;">
-            <img src="/sample-data/Career.jpeg" alt="Career" class="banner-image" height="150px" style="width: 30%;">
-        </div>
-    </div>
-
     
-    <a href="">Top Page</a>
+    
+    <a href="" style="">Top Page</a>
 </div>
 
-@* JavaScript for Opportunities *@
+@* JavaScript for buttons on the main page*@
 <script>
     function toggleMoreInfo1() {
         const moreInfo = document.getElementById("more-info1");
@@ -112,5 +175,33 @@
     function toggleMoreInfo3() {
         const moreInfo = document.getElementById("more-info3");
         moreInfo.style.display = moreInfo.style.display === "none" ? "block" : "none";
+    }
+
+    /**
+     * Follow functions are used for the buttons on each box for the colleges;
+     * When clicking the button,
+     * a new tab is opened at the URLs below
+     */
+
+    function link1(){
+        window.open("http://www.marshall.edu");
+   }
+   function link2(){
+       window.open("http://www.marshall.edu");
+
+   }
+   function link3(){
+       window.open("http://www.marshall.edu");
+
+   }
+   function link4(){
+        window.open("http://www.marshall.edu");
+    }
+    function link5(){
+        window.open("http://www.marshall.edu");
+
+    }
+    function link6(){
+        window.open("http://www.marshall.edu");
     }
 </script>
