@@ -6,7 +6,9 @@
 <img src="/sample-data/Students.jpg" alt="Banner" class="banner-image">
 
 <div class="home-page">
-    
+    <script>window.onload = function (){
+            window.scrollTo(0,0);
+        };</script>
     @*Introduction Section*@
     <div id="introduction" class="intro-cont">
      <section class="intro">
@@ -29,7 +31,7 @@
 
             <img src="/sample-data/School.jpeg" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
 
-            <button onclick="toggleMoreInfo1()" style="display: block; margin: 10px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+            <button onclick="toggleMoreInfo1()" class="moreButton">
                 Read More
             </button>
 
@@ -45,7 +47,7 @@
 
             <img src="/sample-data/Career.jpeg" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
 
-            <button onclick="toggleMoreInfo2()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+            <button onclick="toggleMoreInfo2()" class="moreButton" >
                 Read More
             </button>
 
@@ -61,7 +63,7 @@
 
             <img src="/sample-data/CampusLife.jpeg" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
 
-            <button onclick="toggleMoreInfo3()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+            <button onclick="toggleMoreInfo3()" class="moreButton">
                 Read More
             </button>
 
@@ -75,11 +77,31 @@
     
     @*Banner to separate sections *@
     <div id="sep-banner" class="sep-banner">
-        <section class="sep-ban-info">
-            StudyAbroad works with top Institutions across the United States
+        <section class="s1">
+            <p class="p1">
+                <b>6+</b>
+                
+            </p>
+            <p class="p1">
+                Universities
+            </p>
         </section>
-        <section class="sep-ban-logo">
-            *Insert Uni logo here*
+        
+        <section class="s1">
+            <p class="p1">
+                <b>150+</b>
+            </p>
+            <p class="p1">
+                Students
+            </p>
+        </section>
+        <section class="s1">
+            <p class="p1">
+                <b>120+</b>
+            </p>
+            <p class="p1">
+                Degrees
+            </p>
         </section>
     </div>
     
@@ -96,7 +118,7 @@
 
             <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
 
-            <button onclick="link1()" style="display: block; margin: 10px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+            <button onclick="link1()" class="visitButton">
                 Visit Site
             </button>
         </section>
@@ -106,7 +128,7 @@
 
             <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
 
-            <button onclick="link2()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+            <button onclick="link2()" class="visitButton">
                 Visit Site
             </button>
         </section>
@@ -116,7 +138,7 @@
 
             <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
 
-            <button onclick="link3()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+            <button onclick="link3()" class="visitButton">
                 Visit Site
             </button>
         </section>
@@ -126,7 +148,7 @@
 
             <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
 
-            <button onclick="link4()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+            <button onclick="link4()" class="visitButton">
                 Visit Site
             </button>
         </section>
@@ -136,7 +158,7 @@
 
             <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
 
-            <button onclick="link5()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+            <button onclick="link5()" class="visitButton">
                 Visit Site
             </button>
         </section>
@@ -146,24 +168,49 @@
 
             <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
 
-            <button onclick="link6()" style="display: block; margin: 20px auto; padding: 5px 5px; font-size: 40px; font-family: 'Maku', sans-serif; color: #102F48; background-color: #f4f4f9; border: none; border-radius: 5px; cursor: pointer;">
+            <button onclick="link6()" class="visitButton">
                 Visit Site
             </button>
         </section>
     </div>
 
-    @*Study Section*@
-    <div class="box-style" id="studies">
-        <h1>Studies/Programs</h1>
+    @*Student Testimonials*@
+    <div class="studBox" id="studies">
+        <h3 class="tstHeader">
+            What are students like <b>YOU</b> saying?
+        </h3>
+        <section class="testHolder">
+            <section class="testim">
+                <img src="/sample-data/ChatGPTstudent.png" alt="studTest" width="350px" style="display: block; margin: 0 auto;">
+                <p class="tst">
+                    "Studying in the U.S. completely changed my life. At first, I was nervous about being so far from home, but the support I received from my professors and classmates made the transition much easier. I’ve learned so much—not just academically, but about myself and the world. I’ve grown more confident and independent, and I’ve built friendships that will last a lifetime."
+                </p>
+            </section>
+            <section class="testim">
+                <img src="/sample-data/ChatGPTstudent2.png" alt="studTest"  width="350px" style="display: block; margin: 0 auto;">
+                <p class="tst">
+                    "I chose the U.S. because I wanted a high-quality education in my field, but what I got was so much more. The international student community was incredibly welcoming, and there were so many resources to help me adjust. I learned how to navigate a new culture, communicate more confidently, and grow both personally and professionally. I truly believe this experience prepared me for a global career."
+                </p>
+            </section>     
+        </section>
+       
     </div>
 
+    @*Footer*@
+    <footer class="footer">
+        <a href="" class="top">Top Page</a>    
+        <section>
+            <p>
+                Powered by <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" style="color:darkblue">Blazor</a>
+            </p>
+        </section>
+    </footer>
     
-    
-    <a href="" style="">Top Page</a>
 </div>
 
 @* JavaScript for buttons on the main page*@
 <script>
+    
     function toggleMoreInfo1() {
         const moreInfo = document.getElementById("more-info1");
         moreInfo.style.display = moreInfo.style.display === "none" ? "block" : "none";
@@ -204,4 +251,5 @@
     function link6(){
         window.open("http://www.marshall.edu");
     }
+
 </script>

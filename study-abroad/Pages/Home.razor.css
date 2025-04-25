@@ -5,9 +5,6 @@ CSS formatting for home.razor
 /*
 Following is used to format the overall page
  */
-.home-page{
-    background-color: lightblue;
-}
 
 /*
 Following is used to format banner image at top of home page
@@ -27,6 +24,7 @@ Following is used to format flex container for intro section
     padding-top: 50px;
     display:flex;
     justify-content: center;
+    
 }
 
 /*
@@ -53,25 +51,51 @@ Following is used to format opportunities section
     padding-top: 50px;
     padding-bottom: 50px;
 }
+/*
+Following is used to format 'read more' buttons
+ */
+.moreButton{
+    display: block;
+    margin: 20px auto;
+    padding: 5px 5px;
+    font-size: 40px;
+    font-family: 'Maku', sans-serif;
+    color: #102F48; 
+    background-color: #6A8CAF;
+    border: 4px solid #5A7A99;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
 
 /*
 Following is used to format banner between Opportunities and colleges sections
  */
 .sep-banner{
-    background-color: lightgray;
-    border-top:solid 5px black;
-    border-bottom: solid 5px black;
-    height: 100px;
-    width:100%;
+    background-color: #6A8CAF;
+    border-radius: 25px;
+    height: 150px;
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    padding-top:20px;
+    
 }
 /*
-Following is used to format the content within the banner above
+Following formats sections containing text in banner
  */
-.sep-ban-info{
-    font-size: 35px;
-    color: black;
+.s1{
+    margin-left: 100px;
+    margin-right:100px;
+    display: flex;
+    flex-direction: column;
+    
+}
+/*
+Following formats text in banner
+ */
+.p1{
+    font-size: 30px;
 }
 
 
@@ -100,10 +124,89 @@ Following formats individual grid items contained within the 'colleges' section
     box-shadow: 0 4px 10px rgba(0,0,0, 0.1);
 }
 
+/*
+Following formats buttons used to visit college websites
+ */
+.visitButton{
+    display: block;
+    margin: 20px auto;
+    padding: 5px 5px;
+    font-size: 40px;
+    font-family: 'Maku', sans-serif;
+    color: #102F48;
+    background-color: #6A8CAF;
+    border: 4px solid #5A7A99;
+    border-radius: 25px;
+    cursor: pointer;
+}
 
 
 
+/*
+Following is used to format Student testimonials section
+ */
+.studBox{
+    margin-top:35px;
+    display: flex;
+    flex-direction: column;
+}
+/*
+Formatting for header of testimonials section
+ */
+.tstHeader{
+    text-align: center;
+    background-color:#6A8CAF;
+    font-size: 45px;
+}
 
+/*
+Formatting for container under header holding testimonial boxes
+ */
+.testHolder{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 150px;
+}
+/*
+Formatting for testimonial boxes
+ */
+.testim {
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    border: 5px solid #6d8faa;
+    border-radius:40px;
+    background-color: #d6efff;    
+    width: 650px;
+}
+/*
+Formatting for testimonial text
+ */
+.tst {
+    font-family: 'Poppins';
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*
+Formatting for the footer
+ */
+.footer{
+    background-color: #4f7092;
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    height: 200px;
+    margin-top:40px;
+    
+}
+.top{
+    font-size: 30px;
+    color: darkblue;
+    margin-top:25px;
+}
 
 
 

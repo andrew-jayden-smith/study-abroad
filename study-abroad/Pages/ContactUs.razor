@@ -45,9 +45,8 @@
     
     private async Task SendEmail()
     {
-        string htmlContent = $"<h1>You have a new recruit by the name of {firstName} {lastName} who wants to connect</h1>" +
-                             $"<p>Email: {email}</p>" +
-                             $"<p>Message: {message}</p>";
+        string htmlContent = $@"<div style='font-family: Arial, sans-serif; padding: 20px; background-color: #f9f9f9; color: #333;'>    <h2 style='color: #2c3e50;'>New Recruit Submission</h2>    <p style='font-size: 16px;'>        <strong>Name:</strong> {firstName} {lastName}
+        <strong>Email:</strong> <a href='mailto:{email}' style='color: #1a73e8;'>{email}</a>    </p>    <div style='margin-top: 20px; padding: 15px; background-color: #ffffff; border: 1px solid #ddd; border-radius: 8px;'>        <p style='margin: 0;'><strong>Message:</strong></p>        <p style='white-space: pre-line; margin-top: 10px;'>{message}</p>    </div></div>";
         
         
         bool success = await contactUsService.SendEmailAsync(
