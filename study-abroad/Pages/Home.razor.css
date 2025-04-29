@@ -73,7 +73,6 @@ Following is used to format banner between Opportunities and colleges sections
  */
 .sep-banner{
     background-color: #6A8CAF;
-    border-radius: 25px;
     height: 150px;
     display: flex;
     flex-direction: row;
@@ -105,11 +104,12 @@ Following is used to format the colleges section
 .colleges-section {
     padding-top: 50px;
     padding-bottom: 50px;
-    display:grid;
-    gap: 15px;
+    flex-wrap: wrap;
+    display:flex;
     grid-template-columns: repeat(3,1fr);
-    margin-top: 10px;
-    background-color: lightblue;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
 }
 
 /*
@@ -147,9 +147,7 @@ Formatting for the footer
     display:flex;
     text-align: center;
     flex-direction: column;
-    height: 200px;
-    margin-top:40px;
-    
+    height: 320px;
 }
 .top{
     font-size: 30px;

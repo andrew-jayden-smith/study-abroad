@@ -12,14 +12,21 @@
     @*Introduction Section*@
     <div id="introduction" class="intro-cont">
      <section class="intro">
-        <h1 style="font-family: 'Arial', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 20px; text-align: center;">Your Path to Success Starts Here!</h1>
-        <h4 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2rem; margin-bottom: 30px; text-align: center;">World-Class Education</h4>
+        <h1 style="font-family: 'Arial', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 20px; text-align: center;">Unlock Your Future: Study Engineering in the USA</h1>
+        <h4 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2rem; margin-bottom: 30px; text-align: center;">Discover exceptional education, innovative research, and international career
+            opportunities. Allow us to support you at every step!</h4>
 
         <p style="font-size: 22px; line-height: 1.6; color: #102F48; text-align: left; max-width: 800px; margin: 0 auto;">
-            The United States is home to many of the world’s top universities, known for their cutting-edge research, experienced faculty, and high academic standards. A degree from a U.S. institution is highly recognized and respected worldwide.
+            Are you ready to take the first step toward a world-class engineering education in the
+            United States? Studying at top American universities not only opens the door to cutting-
+            edge knowledge and innovation but also transforms your future with global career
+            opportunities.
         </p>
         <p style="font-size: 22px; line-height: 1.6; color: #102F48; text-align: left; max-width: 800px; margin: 20px auto 0;">
-            Studying in the U.S. opens doors to valuable career opportunities. Many universities offer internships and co-op programs allowing students to gain real-world experience while studying.
+            Our team is here to guide you every step of the way — from choosing the
+            right program to preparing for your journey abroad. Connect with our experienced
+            recruiters today and let us help you turn your dreams into reality. Your future in engineering
+            starts with one conversation — and we’re excited to be part of your success story!
         </p>
     </section>
     </div>
@@ -106,73 +113,97 @@
     </div>
     
     @*Colleges Section*@
-    <div class="colleges-section" id="colleges">
-        
-        @*
-        "collegeBox" is the container for the Colleges section, using a grid layout (CSS in home.razor.css)
-        Each of the following sections creates a box, in the grid, to be used with the name of the corresponding college,
-        including a picture and link to the University's website
-        *@
-        <section class="collegeBox">
-            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">Marshall University</h1>
+    <div class="colleges-section" id="colleges" style="margin-bottom: 20px">
 
-            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
+        <div style="width: 100%; text-align: center; margin-bottom: 20px;">
+            <h1 style="font-family: 'Arial', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px;">
+                Our Partner Universities
+            </h1>
+            <h2 style="font-family: 'Arial', sans-serif; color: #102F48; font-size: 2rem; margin-bottom: 20px;">
+                Carnegie R1 Universities
+            </h2>
+        </div>
 
-            <button onclick="link1()" class="visitButton">
-                Visit Site
-            </button>
-        </section>
+        <section style="display: flex; flex-wrap: wrap; justify-content: center;">
 
-        <section class="collegeBox">
-            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
+            <a onclick="link1()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R1/MIT-Logo.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
 
-            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
+            <a onclick="link2()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R1/Stanford-University-Logo.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
 
-            <button onclick="link2()" class="visitButton">
-                Visit Site
-            </button>
-        </section>
+            <a onclick="link3()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R1/CMU_Logo.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
 
-        <section class="collegeBox">
-            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
+            <a onclick="link4()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R1/UniOfCaLogo.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
 
-            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
+            <a onclick="link5()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R1/university-of-michigan-logo.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
 
-            <button onclick="link3()" class="visitButton">
-                Visit Site
-            </button>
-        </section>
+            <a onclick="link6()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R1/UniOfTexasLogo.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
 
-        <section class="collegeBox">
-            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
+            <a onclick="link7()" style="display: flex; justify-content: center; width: 100%; cursor: pointer;">
+                <img src="/sample-data/R1/University-of-Washington-Logo.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
 
-            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
-
-            <button onclick="link4()" class="visitButton">
-                Visit Site
-            </button>
-        </section>
-
-        <section class="collegeBox">
-            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
-
-            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
-
-            <button onclick="link5()" class="visitButton">
-                Visit Site
-            </button>
-        </section>
-
-        <section class="collegeBox">
-            <h1 style="font-family: 'Maku', sans-serif; color: #102F48; font-size: 2.5rem; margin-bottom: 10px; text-align: center;">University TBD</h1>
-
-            <img src="/sample-data/mu-pic.jfif" alt="School" width="380px" height="350px" style="display: block; margin: 0 auto;">
-
-            <button onclick="link6()" class="visitButton">
-                Visit Site
-            </button>
         </section>
     </div>
+
+    <div class="colleges-section">
+
+        <div style="width: 100%; text-align: center; margin-bottom: 20px;">
+            <h2 style="font-family: 'Arial', sans-serif; color: #102F48; font-size: 2rem; margin-bottom: 20px;">
+                Carnegie R2 Universities
+            </h2>
+        </div>
+
+        <section style="display: flex; flex-wrap: wrap; justify-content: center;">
+
+            <a onclick="link8()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R2/Marshall.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
+
+            <a onclick="link9()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R2/wvuLogo.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
+
+            <a onclick="link10()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R2/UNC.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
+
+            <a onclick="link11()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R2/UTA.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
+
+            <a onclick="link12()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R2/SDSU.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
+
+            <a onclick="link13()" style="display: flex; justify-content: center; width: 33.3333%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R2/FIU.jpeg" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
+
+            <!-- FIXED: Last 2 logos set to 50% width -->
+            <a onclick="link14()" style="display: flex; justify-content: center; width: 50%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R2/Nevada.jpg" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
+
+            <a onclick="link15()" style="display: flex; justify-content: center; width: 50%; box-sizing: border-box; cursor: pointer;">
+                <img src="/sample-data/R2/ODU.png" alt="School" style="max-width: 250px; max-height: 150px; width: auto; height: auto; object-fit: contain;">
+            </a>
+
+        </section>
+    </div>
+
+
 
     @*Footer*@
     <footer class="footer">
@@ -180,6 +211,22 @@
         <section>
             <p>
                 Powered by <a href="https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor" style="color:darkblue">Blazor</a>
+            </p>
+            <p>
+                Office Location Placeholder
+            </p>
+            <p>
+                Email Placeholder
+            </p>
+            <p>
+                Phone/WhatsApp # Placeholder
+            </p>
+            <p>
+                Privacy Policy | Terms of Service
+            </p>
+            <p>
+                We assist with university admissions but do not guarantee visa issuance or financial aid.
+                Our mission is to provide the strongest pathway and support for every student.
             </p>
         </section>
     </footer>
@@ -208,25 +255,58 @@
      */
 
     function link1(){
-        window.open("http://www.marshall.edu");
+        window.open("https://web.mit.edu/");
    }
    function link2(){
-       window.open("http://www.marshall.edu");
+       window.open("https://www.stanford.edu/");
 
    }
    function link3(){
-       window.open("http://www.marshall.edu");
+       window.open("https://www.cmu.edu/");
 
    }
    function link4(){
-        window.open("http://www.marshall.edu");
+        window.open("https://www.berkeley.edu/");
     }
     function link5(){
-        window.open("http://www.marshall.edu");
+        window.open("https://umich.edu/");
 
     }
     function link6(){
-        window.open("http://www.marshall.edu");
+        window.open("https://www.utexas.edu/");
     }
 
+    function link7(){
+        window.open("https://www.washington.edu/");
+    }
+
+    function link8(){
+        window.open("https://www.marshall.edu/");
+    }
+    function link9(){
+        window.open("https://www.wvu.edu/");
+
+    }
+    function link10(){
+        window.open("https://www.charlotte.edu/");
+
+    }
+    function link11(){
+        window.open("https://www.uta.edu/");
+    }
+    function link12(){
+        window.open("https://www.sdsu.edu/");
+
+    }
+    function link13(){
+        window.open("https://www.fiu.edu/");
+    }
+
+    function link14(){
+        window.open("https://www.unr.edu/");
+    }
+
+    function link15(){
+        window.open("https://www.odu.edu/");
+    }
 </script>
