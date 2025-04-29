@@ -11,10 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3786a32-75c1-4168-b9e0-86f1d249db1e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/study-abroad/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Pages/Home.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Pages/Home.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Pages/Home.razor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.study-abroad/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.study-abroad/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +47,6 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Users/smithdr3w/RiderProjects/study-abroad/study-abroad/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/smithdr3w/RiderProjects/study-abroad/study-abroad/Layout/MainLayout.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/smithdr3w/RiderProjects/study-abroad/study-abroad/Pages/AboutUs.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/smithdr3w/RiderProjects/study-abroad/study-abroad/Pages/AboutUs.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/smithdr3w/RiderProjects/study-abroad/study-abroad/Pages/Home.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Users/smithdr3w/RiderProjects/study-abroad/study-abroad/Pages/Home.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -143,7 +135,8 @@
       <workItem from="1744670228317" duration="405000" />
       <workItem from="1745267551408" duration="1640000" />
       <workItem from="1745358174814" duration="994000" />
-      <workItem from="1745873010175" duration="5795000" />
+      <workItem from="1745873010175" duration="6261000" />
+      <workItem from="1745903871453" duration="73000" />
     </task>
     <task id="LOCAL-00001" summary="ContactUs working and design changes">
       <option name="closed" value="true" />
@@ -161,7 +154,31 @@
       <option name="project" value="LOCAL" />
       <updated>1742594837001</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Redesign of university logos, header, footer">
+      <option name="closed" value="true" />
+      <created>1745901814181</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1745901814181</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Redesign">
+      <option name="closed" value="true" />
+      <created>1745901853877</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1745901853877</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Redesign header, footer, uni logos">
+      <option name="closed" value="true" />
+      <created>1745902010437</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1745902010437</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,6 +190,9 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="ContactUs working and design changes" />
     <MESSAGE value="Nav-bar changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nav-bar changes" />
+    <MESSAGE value="Redesign of university logos, header, footer" />
+    <MESSAGE value="Redesign" />
+    <MESSAGE value="Redesign header, footer, uni logos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redesign header, footer, uni logos" />
   </component>
 </project>
