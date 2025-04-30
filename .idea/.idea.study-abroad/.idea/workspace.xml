@@ -11,14 +11,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b3786a32-75c1-4168-b9e0-86f1d249db1e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/study-abroad/wwwroot/sample-data/Privacy Policy.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study-abroad/wwwroot/sample-data/Terms of Service.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/study-abroad/wwwroot/sample-data/connectButton.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Pages/AboutUs.razor" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Pages/AboutUs.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Pages/Home.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Pages/Home.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Pages/Home.razor.css" afterDir="false" />
-    </list>
+    <list default="true" id="b3786a32-75c1-4168-b9e0-86f1d249db1e" name="Changes" comment="-added Priv Pol and Tos PDF; added connect button; changed AboutUs.razor to placeholder" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,12 +39,12 @@
     &quot;assignee&quot;: &quot;andrew-jayden-smith&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/andrew-jayden-smith/study-abroad.git&quot;,
-    &quot;accountId&quot;: &quot;4aa23ddd-4791-4b19-8b47-33431454141d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/andrew-jayden-smith/study-abroad.git",
+    "accountId": "5693dc38-9d2e-48aa-8fab-377d95ea1f89"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///Users/smithdr3w/RiderProjects/study-abroad/study-abroad/Pages/Home.razor" root0="SKIP_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
@@ -147,6 +140,7 @@
       <workItem from="1745358174814" duration="994000" />
       <workItem from="1745873010175" duration="6261000" />
       <workItem from="1745903871453" duration="73000" />
+      <workItem from="1746045839827" duration="408000" />
     </task>
     <task id="LOCAL-00001" summary="ContactUs working and design changes">
       <option name="closed" value="true" />
@@ -188,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745902010437</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-added Priv Pol and Tos PDF; added connect button; changed AboutUs.razor to placeholder">
+      <option name="closed" value="true" />
+      <created>1746045941166</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746045941166</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +205,7 @@
     <MESSAGE value="Redesign of university logos, header, footer" />
     <MESSAGE value="Redesign" />
     <MESSAGE value="Redesign header, footer, uni logos" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="-added Priv Pol and Tos PDF; added connect button; changed AboutUs.razor to placeholder" />
+    <option name="LAST_COMMIT_MESSAGE" value="-added Priv Pol and Tos PDF; added connect button; changed AboutUs.razor to placeholder" />
   </component>
 </project>
