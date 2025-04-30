@@ -18,6 +18,36 @@ Following is used to format banner image at top of home page
 }
 
 /*
+Formatting for button container at top of page
+ */
+.butHolder{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top:20px;
+}
+
+/*
+Following is used to format button at top of page
+ */
+.conButton{
+    width:20%;
+    border: 8px solid #5A7A99;
+    border-radius: 25px;
+}
+.conButton img{
+    max-width:100%;
+    border-radius:20px;
+}
+.conButton:hover{
+   border: 8px dotted grey;
+}
+
+
+
+
+
+/*
 Following is used to format flex container for intro section
  */
 .intro-cont{
@@ -71,33 +101,15 @@ Following is used to format 'read more' buttons
 /*
 Following is used to format banner between Opportunities and colleges sections
  */
-.sep-banner{
+.sep-banner {
     background-color: #6A8CAF;
-    height: 150px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding-top:20px;
-    
-}
-/*
-Following formats sections containing text in banner
- */
-.s1{
-    margin-left: 100px;
-    margin-right:100px;
-    display: flex;
-    flex-direction: column;
-    
-}
-/*
-Following formats text in banner
- */
-.p1{
-    font-size: 30px;
-}
+    padding-top: 20px;
 
-
+}
 /*
 Following is used to format the colleges section
  */
@@ -110,6 +122,7 @@ Following is used to format the colleges section
     background-color: white;
     text-align: center;
     border-radius: 25px;
+    justify-content: center;
 }
 
 /*
