@@ -1,0 +1,44 @@
+Index: study-abroad/Pages/Home.razor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>.box-style {\r\n    padding-top: 200px;\r\n    padding-bottom: 200px;\r\n    border: 5px solid #0c63e4;\r\n    border-radius: 50px;\r\n}\r\n\r\n.banner-image {\r\n    width: 100%; \r\n    height: 500px; \r\n    display: block; \r\n    margin: 0; \r\n    padding: 0;\r\n}\r\n\r\n.section1 {\r\n    text-align: left;\r\n    margin-top: 50px;\r\n}\r\n\r\n.padding {\r\n    margin-top: 200px;\r\n    margin-bottom: 200px;\r\n}\r\n\r\n.inner {\r\n    width: 90%;\r\n    max-width: 1110px;\r\n    margin: 0 auto;\r\n}\r\n\r\n.intro {\r\n    margin: 0 0 0 95px;\r\n}\r\n\r\n.centerCol {\r\n    width: 100%;\r\n}\r\n\r\n.text-container {\r\n        width: 90%; \r\n        max-width: 100%;\r\n        text-align: left;\r\n        margin: 0 auto;\r\n}\r\n\r\nhtml, body {\r\n    margin: 0;\r\n    padding: 0;\r\n    overflow-x: hidden;\r\n}\r\n\r\n* {\r\n    box-sizing: border-box;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/study-abroad/Pages/Home.razor.css b/study-abroad/Pages/Home.razor.css
+--- a/study-abroad/Pages/Home.razor.css	(revision dce4645c8c410a5671438719ad414d3cb47b4d7b)
++++ b/study-abroad/Pages/Home.razor.css	(date 1741039157013)
+@@ -1,7 +1,30 @@
+ .box-style {
+-    padding-top: 200px;
+-    padding-bottom: 200px;
+-    border: 5px solid #0c63e4;
++    border: 1px solid #ccc; /* Light gray border */
++    padding: 20px; /* Add some space inside the box */
++    margin-bottom: 20px; /* Space between boxes */
++    border-radius: 5px; /* Rounded corners */
++}
++#about-usa {
++    display: flex; /* Use flexbox for layout */
++    flex-direction: column; /* Arrange items vertically */
++    align-items: center; /* Center items horizontally */
++}
++
++.paragraph-box {
++    border: 1px solid #ddd; /* Lighter border for paragraph boxes */
++    padding: 10px;
++    margin-right: 10px; /* Space between paragraph boxes */
++    display: inline-block; /* Arrange horizontally */
++    vertical-align: top; /* Align to the top */
++    width: 30%; /* Adjust width as needed */
++    box-sizing: border-box; /* Include padding and border in width calculation */
++}
++#about-usa img {
++    display: block;
++    margin-bottom: 10px;
++}
++#about-usa {
++    text-align: center; /* center the image and boxes */
+     border-radius: 50px;
+ }
+ 
