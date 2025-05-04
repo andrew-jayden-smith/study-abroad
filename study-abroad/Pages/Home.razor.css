@@ -14,7 +14,7 @@ Following is used to format banner image at top of home page
     height: 465px;
     display: block;
     margin: 0;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 /*
@@ -24,7 +24,8 @@ Formatting for button container at top of page
     width: 100%;
     display:flex;
     justify-content: center;
-    margin-top:20px;
+    margin-top:40px;
+    padding-bottom:30px;
 }
 
 /*
@@ -51,7 +52,7 @@ Following is used to format button at top of page
 Following is used to format flex container for intro section
  */
 .intro-cont{
-    padding-top: 50px;
+    padding-top: 30px;
     display:flex;
     justify-content: center;
     
@@ -73,7 +74,6 @@ Following is used to format the small box in the intro section
 Following is used to format opportunities section
  */
 .opportunities{
-    background-color: lightblue;
     display:flex;
     justify-content: center;
     gap: 5px;
@@ -90,9 +90,7 @@ Following is used to format 'read more' buttons
     padding: 5px 5px;
     font-size: 40px;
     font-family: 'Maku', sans-serif;
-    color: #102F48; 
-    background-color: #6A8CAF;
-    border: 4px solid #5A7A99;
+    color: #102F48;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -102,13 +100,14 @@ Following is used to format 'read more' buttons
 Following is used to format banner between Opportunities and colleges sections
  */
 .sep-banner {
-    background-color: #6A8CAF;
+    background-color: #102F48;
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 20px;
-
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 /*
 Following is used to format the colleges section
@@ -121,7 +120,6 @@ Following is used to format the colleges section
     grid-template-columns: repeat(3,1fr);
     background-color: white;
     text-align: center;
-    border-radius: 25px;
     justify-content: center;
 }
 
@@ -156,7 +154,7 @@ Following formats buttons used to visit college websites
 Formatting for the footer
  */
 .footer{
-    background-color: #4f7092;
+    background-color: lightblue;
     display:flex;
     text-align: center;
     flex-direction: column;
