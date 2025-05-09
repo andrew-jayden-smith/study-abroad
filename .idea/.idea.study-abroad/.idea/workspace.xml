@@ -11,11 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3786a32-75c1-4168-b9e0-86f1d249db1e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/study-abroad/wwwroot/appsetting.example.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/study-abroad/wwwroot/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.study-abroad/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.study-abroad/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Layout/MainLayout.razor" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Layout/MainLayout.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Layout/MainLayout.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Layout/MainLayout.razor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Pages/Home.razor" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Pages/Home.razor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/study-abroad/Pages/Home.razor.css" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Pages/Home.razor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-abroad/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/study-abroad/study-abroad.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/study-abroad/study-abroad.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JSON File" />
       </list>
     </option>
   </component>
@@ -145,7 +146,10 @@
       <workItem from="1746045905317" duration="1685000" />
       <workItem from="1746246714544" duration="2397000" />
       <workItem from="1746293513910" duration="145000" />
-      <workItem from="1746376056242" duration="492000" />
+      <workItem from="1746376056242" duration="543000" />
+      <workItem from="1746376725710" duration="303000" />
+      <workItem from="1746475196726" duration="867000" />
+      <workItem from="1746753922486" duration="973000" />
     </task>
     <task id="LOCAL-00001" summary="ContactUs working and design changes">
       <option name="closed" value="true" />
@@ -203,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746046212289</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Final Design Changes">
+      <option name="closed" value="true" />
+      <created>1746376585299</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746376585299</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +232,7 @@
     <MESSAGE value="Redesign header, footer, uni logos" />
     <MESSAGE value="API Token Fix" />
     <MESSAGE value="workspace fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace fix" />
+    <MESSAGE value="Final Design Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Design Changes" />
   </component>
 </project>
